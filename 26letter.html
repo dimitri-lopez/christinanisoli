@@ -1,0 +1,43 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="navbar.css">
+  <script language="javascript" src="navbar.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Christina Nisoli</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="26letter.html">Letter 1</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="bdy">
+    <div></div>
+  </div>
+  <script>
+    var entry = window.prompt("Password:", "")
+    var pass = "TWFybWFsYWRl"
+
+    var entry = window.btoa(entry)
+
+    if(entry == pass){
+			var tinaLetter = "<img class=width src='tinaLetter/letter1.jpg'/> <img class=width src='tinaLetter/letter2.jpg'/> <img class=width src='tinaLetter/letter3.jpg'/> <img class=width src='tinaLetter/letter4.jpg'/> <img class=width src='tinaLetter/letter5.jpg'/> <img class=width src='tinaLetter/letter6.jpg'/> <img class=width src='tinaLetter/letter7.jpg'/> <img class=width src='tinaLetter/letter8.jpg'/>"
+      
+			document.getElementById("bdy").innerHTML = tinaLetter
+    }else{
+      //alert("Wrong password!")
+    }
+  </script>
+
+</html>
