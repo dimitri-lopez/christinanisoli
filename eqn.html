@@ -23,21 +23,41 @@
       </ul>
     </div>
   </nav>
+<style>
+	#bdy{
+		justify-content: center;
+		align-text: center;
+	}
+
+	#bdy p{
+		justify-content: center;
+		text-align: center;
+		font-size: 2.5rem;
+		color: dimgrey;
+		display: none;
+	}
+</style>
   <div id="bdy">
-    <div></div>
+    <p>9x - 7i > 3(3x - 7u)</p>
+    <p>9x - 7i > 9x - 21u</p>
+    <p>-7i < -21 u</p>
+    <p>i 
+			<span style="color: red;"><3</span>
+		 u</p>
+		<p>:PPPPP</p>
+		<p>Thank you for everything :)</p>
   </div>
   <script>
     var entry = window.prompt("Password:", "")
-    var pass = "TWFybWFsYWRl"
-
+    var pass = "Q2FsYw=="
     var entry = window.btoa(entry)
 
     if(entry == pass){
-			var tinaLetter = "<img class=width src='tinaLetter/letter1.jpg'/> <img class=width src='tinaLetter/letter2.jpg'/> <img class=width src='tinaLetter/letter3.jpg'/> <img class=width src='tinaLetter/letter4.jpg'/> <img class=width src='tinaLetter/letter5.jpg'/> <img class=width src='tinaLetter/letter6.jpg'/> <img class=width src='tinaLetter/letter7.jpg'/> <img class=width src='tinaLetter/letter8.jpg'/>"
-      
-			document.getElementById("bdy").innerHTML = tinaLetter
-    }else{
-      //alert("Wrong password!")
+			$(document).ready(function () {
+					$('p').each(function (line) {
+							$(this).delay((line++) * 1500).fadeIn();
+					});
+			});
     }
   </script>
 
